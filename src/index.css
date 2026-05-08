@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Roboto:wght@400;700&display=swap');
+@import "tailwindcss";
+@theme {
+    --font-sans: "ABeeZee", sans-serif;
+    --font-alt: "Roboto", sans-serif;
+    /* ── Base ── */
+    --color-primary-black: #1A1A1A;
+    --color-primary-white: #FFFFFF;
+    --color-background-gray: #F7F7F8;
+    --color-background-card: #FFFFFF;
+    /* ── Orange (brand) ── */
+    --color-primary-orange: #FF6B00;
+    --color-primary-orange-light: #ff6a00da;
+    --color-primary-orange-pale: #FFF0E6;
+    --color-primary-orange-dark: #CC5500;
+    /* ── Gray scale ── */
+    --color-small-gray: #939393;
+    --color-gray-100: #F7F7F8;
+    --color-gray-200: #EFEFEF;
+    --color-gray-300: #E0E0E0;
+    --color-gray-400: #BDBDBD;
+    --color-gray-500: #939393;
+    --color-gray-600: #666666;
+    --color-gray-700: #444444;
+    --color-gray-800: #2C2C2C;
+    /* ── Status colors ── */
+    --color-status-new: #3B82F6;
+    --color-status-new-bg: #EFF6FF;
+    --color-status-preparing: #F97316;
+    --color-status-preparing-bg: #FFF7ED;
+    --color-status-ready: #22C55E;
+    --color-status-ready-bg: #F0FDF4;
+    --color-status-delivered: #8B5CF6;
+    --color-status-delivered-bg: #F5F3FF;
+    --color-status-cancelled: #EF4444;
+    --color-status-cancelled-bg: #FEF2F2;
+    /* ── Semantic ── */
+    --color-success: #22C55E;
+    --color-success-bg: #F0FDF4;
+    --color-warning: #EAB308;
+    --color-warning-bg: #FEFCE8;
+    --color-danger: #EF4444;
+    --color-danger-bg: #FEF2F2;
+    --color-info: #3B82F6;
+    --color-info-bg: #EFF6FF;
+    /* ── Payment types ── */
+    --color-cash: #22C55E;
+    --color-card: #3B82F6;
+    --color-ewallet: #8B5CF6;
+    --color-giftcard: #EC4899;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #dashboard-print,
+    #dashboard-print * {
+        visibility: visible;
+    }
+    #dashboard-print {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .no-print {
+        display: none !important;
+    }
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-in {
+    animation: slide-in 0.25s ease-out;
+}
