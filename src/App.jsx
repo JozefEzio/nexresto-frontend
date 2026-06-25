@@ -24,11 +24,10 @@ const sideBar_routes = [
 
 const AppLayout = ({ children }) => {
   const { isMobileSize } = useContext(ProductChosen)
-
   return (
     <div className="flex">
       <SideBar />
-      <div className={`flex-1 min-h-screen bg-bacground-gray`}>
+      <div className='flex-1 min-h-screen bg-bacground-gray' style={{ marginBottom: isMobileSize ? '55px':'0px' }} >
         {isMobileSize && <div className='mb-15'><Navbar /></div>}
         {children}
       </div>
@@ -59,7 +58,6 @@ const App = () => (
       } />
     ))}
 
-    {/* Catch-all: any unknown URL renders the 404 page */}
     <Route path='*' element={<NotFound />} />
   </Routes>
 )

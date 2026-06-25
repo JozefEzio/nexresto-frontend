@@ -22,7 +22,6 @@ const Pos = () => {
 
   return (
     <>
-      {/* Desktop layout */}
       <div className="hidden md:flex flex-wrap py-5 px-6 gap-8 items-start bg-[#F8F9FA] min-h-screen">
         <div className="flex-1 flex flex-col gap-5">
           <div className="flex justify-end">
@@ -42,7 +41,6 @@ const Pos = () => {
         </div>
       </div>
 
-      {/* Mobile layout */}
       <div className="flex md:hidden flex-col bg-[#F8F9FA] min-h-screen">
         <div className="flex items-center justify-between px-4 py-3 bg-white border-b border-gray-100 sticky top-0 z-10">
           <button
@@ -72,7 +70,7 @@ const Pos = () => {
           )}
         </div>
 
-        <div className="flex-1 overflow-y-auto pb-24">
+        <div className="flex-1 overflow-y-auto pb-10">
           {activeTab === 'products' ? (
             <div className="flex flex-col gap-4 px-3 pt-4">
               <Categories />

@@ -28,11 +28,9 @@ const Settings = () => {
       <h2 className="font-abeezee text-2xl md:text-[30px] text-primary-black font-bold">Settings</h2>
       <p className="font-abeezee text-small-gray text-[15px] mb-6">Manage your account and preferences</p>
 
-      <div className="flex flex-col lg:flex-row gap-5">
+      <div className="flex flex-col lg:flex-row gap-2">
 
-        {/* Sidebar tab list */}
         <aside className="lg:w-56 flex-shrink-0">
-          {/* Mobile: horizontal scrollable pills */}
           <div className="flex lg:hidden gap-2 overflow-x-auto pb-2 no-scrollbar">
             {tabs.map((tab) => (
               <button
@@ -49,7 +47,6 @@ const Settings = () => {
             ))}
           </div>
 
-          {/* Desktop: vertical sidebar */}
           <nav className="hidden lg:flex flex-col gap-1 bg-white rounded-2xl border border-gray-100 p-2">
             {tabs.map((tab) => (
               <button
@@ -67,8 +64,7 @@ const Settings = () => {
           </nav>
         </aside>
 
-        {/* Content panel */}
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 w-full">
           {tabChosen === 'profile'    && <ProfileSettings />}
           {tabChosen === 'password'   && <PasswordSettings />}
           {tabChosen === 'users'      && <UserManagement />}

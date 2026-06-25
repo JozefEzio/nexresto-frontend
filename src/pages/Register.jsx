@@ -83,19 +83,16 @@ const Register = () => {
             Create an account to get started.
           </p>
 
-          {/* Full Name */}
           <div className="mb-4">
             <FloatingInput id="full-name" onChange={handleInput} name="fullName" label="Full Name" value={formData.fullName} autoComplete="name" />
             {errorData.fullName && <small className="text-red-500 text-[11px]">{errorData.fullName}</small>}
           </div>
 
-          {/* Email */}
           <div className="mb-4">
             <FloatingInput id="email-address" onChange={handleInput} name="email" type="email" label="Email address" value={formData.email} autoComplete="email" />
             {errorData.email && <small className="text-red-500 text-[11px]">{errorData.email}</small>}
           </div>
 
-          {/* Password */}
           <div className="mb-4">
             <FloatingInput id="password" onChange={handleInput} name="password" type={isVisible ? 'text' : 'password'} label="Password" value={formData.password} autoComplete="new-password">
               <button
@@ -110,7 +107,6 @@ const Register = () => {
             {errorData.password && <small className="text-red-500 text-[11px]">{errorData.password}</small>}
           </div>
 
-          {/* Confirm Password */}
           <div className="mb-6">
             <FloatingInput id="confirm_password" onChange={handleInput} name="confirm_password" type="password" label="Confirm Password" value={formData.confirm_password} autoComplete="new-password" />
             {errorData.confirm_password && <small className="text-red-500 text-[11px]">{errorData.confirm_password}</small>}

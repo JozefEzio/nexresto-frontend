@@ -42,7 +42,9 @@ const ProfileSettings = () => {
     data.append('name', form.name)
     data.append('email', form.email)
     data.append('_method', 'PUT')
+
     if (avatar) data.append('avatar', avatar)
+      console.log(avatar)
 
     try {
       const res = await api.post('/user', data, {

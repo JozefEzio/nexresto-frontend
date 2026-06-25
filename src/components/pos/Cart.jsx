@@ -10,8 +10,8 @@ const Cart = () => {
     setProductChosen([])
   }
   return (
-    <div className="flex flex-col h-full overflow-hidden">
-      <div className='h-[350px] overflow-y-auto mt-'>
+    <div className="flex flex-col h-full">
+      <div className='h-[350px] overflow-y-auto'>
         <TopSection
           notes={notes}
           setNotes={setNotes}

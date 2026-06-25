@@ -43,7 +43,6 @@ export const AuthProvider = ({ children }) => {
     try {
       const response = await api.post('/login', { email, password, remember_me: rememberMe })
       const token = response.data.token
-      // Persist in localStorage when remembered, sessionStorage otherwise
       if (rememberMe) {
         localStorage.setItem('auth_token', token)
       } else {
@@ -65,7 +64,6 @@ export const AuthProvider = ({ children }) => {
         email,
         password,
         password_confirmation: confirmPassword,
-        // role_id is intentionally omitted — backend assigns the Client role by default
       })
       const token = response.data.token
       localStorage.setItem('auth_token', token)

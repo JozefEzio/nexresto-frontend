@@ -92,7 +92,7 @@ const UserManagement = () => {
   }
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 p-6 w-[80%] mx-auto">
+    <div className="bg-white rounded-2xl border border-gray-100 p-6 w-full mx-auto">
       <div className='flex items-center justify-between mb-6'>
         <div>
           <h3 className="font-bold text-gray-800 text-lg">User Management</h3>

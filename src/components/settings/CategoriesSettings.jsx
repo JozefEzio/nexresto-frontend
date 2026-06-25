@@ -61,7 +61,7 @@ const CategoriesSettings = () => {
   }
   console.log(categories)
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 p-6 w-[80%] mx-auto">
+    <div className="bg-white rounded-2xl border border-gray-100 p-6  mx-auto">
 
       <div className="flex items-center justify-between mb-6">
         <div>
