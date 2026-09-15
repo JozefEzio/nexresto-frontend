@@ -17,16 +17,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> *(Add screenshots of POS, KDS, Dashboard, Deliveries, and Settings here)*
-
-| Dashboard | POS System | Kitchen Display |
-|-----------|-----------|-----------------|
-| ![Dashboard]() | ![POS]() | ![KDS]() |
-
----
-
 ## ✨ Features
 
 - 🧾 **Point of Sale (POS)** — Take orders, manage cart, choose payment method, delivery or dine-in
